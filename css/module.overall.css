@@ -1,0 +1,73 @@
+#module-overall-wrapper {
+    position: absolute;
+    top: 4vh;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.module-overall-entry-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.module-overall-entry-logo-wrapper {
+    position: absolute;
+    height: 12vh;
+    width: 72%;
+    
+    top: 8vh;
+    left: 50%;
+    overflow: visible;
+    transform: translateX(-50%);
+}
+
+.module-overall-entry-logo-wrapper img {
+    height: auto;
+    width: 100%;
+}
+
+.module-overall-entry-name-wrapper {
+    position: absolute;
+    bottom: 24vh;
+    height: 4vh;
+    width: 100%;
+    left: 0;
+}
+
+.module-overall-entry-score-wrapper {
+    position: absolute;
+    bottom: 12vh;
+    height: 9vh;
+    width: 100%;
+    left: 0;
+}
+
+.module-overall-entry-name-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    font-family: 'Google Sans Regular';
+    font-size: 3vh;
+    color: white;
+    white-space: nowrap;
+}
+
+.module-overall-entry-score-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    font-family: 'Google Sans Regular';
+    font-size: 8vh;
+    color: white;
+    white-space: nowrap;
+}

@@ -13,7 +13,7 @@ body {
 	to {background-position: 500px 0;}
 }
 
-#panel-modules {
+#hidden-modules {
     display: none;
 }
 
@@ -70,7 +70,7 @@ body {
 #pane-wrapper {
     position: absolute;
     top: 0;
-    left: 39.5vh;
+    left: 41vh;
     right: 0;
     height: 100%;
 }
@@ -147,4 +147,17 @@ body {
     top: 0;
     height: 4vh;
     width: 100%;
+    background-color: brown;
+}
+
+#pane-title-text {
+    position: absolute;
+    top: 50%;
+    left: 1.6vh;
+    transform: translateY(-50%);
+
+    font-family: 'Google Sans Regular';
+    font-size: 2vh;
+    color: white;
+    white-space: nowrap;
 }
