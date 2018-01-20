@@ -29,7 +29,7 @@ $("document").ready(function() {
     function appendScore(score, index, listSize) {
         var entry = $.parseHTML(entryTemplate);
 
-        $(entry).find(".module-overall-entry-score-text")[0].innerText = score['score'];
+        $(entry).find(".module-overall-entry-score-text")[0].innerText = parseInt(score['score']) + parseInt(score['other_score']);
         $(entry).find(".module-overall-entry-name-text")[0].innerText = score['name'];
         $($(entry).find(".module-overall-entry-logo-img")[0]).attr("src", "img/" + score['logo'])
 
@@ -45,7 +45,7 @@ $("document").ready(function() {
         var entries = $("#module-overall-wrapper").children(".module-overall-entry-wrapper");
 
         $(entries[index]).find(".module-overall-entry-name-text")[0].innerText = score['name'];
-        $(entries[index]).find(".module-overall-entry-score-text")[0].innerText = score['score'];
+        $(entries[index]).find(".module-overall-entry-score-text")[0].innerText = parseInt(score['score']) + parseInt(score['other_score']);
 
         $(entries[index]).css("background-color", rgba_convert(score['color'], 0.5));
     }
