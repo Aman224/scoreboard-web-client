@@ -1,0 +1,151 @@
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#panel-modules {
+    display: none;
+}
+
+#display-wrapper {
+    position: absolute;
+    top: 2.5vh;
+    bottom: 2.5vh;
+    left: 2.5vh;
+    right: 2.5vh;
+    background-color: gray;
+    overflow: hidden;
+}
+
+#top-chrome-wrapper {
+    position: absolute;
+    top: 0;
+    height: 8vh;
+    width: 100%;
+    background-color: teal;
+    overflow: hidden;
+}
+
+#bottom-chrome-wrapper {
+    position: absolute;
+    bottom: 0;
+    height: 6vh;
+    width: 100%;
+    background-color: teal;
+    overflow: hidden;
+}
+
+#content-wrapper {
+    position: absolute;
+    top: 10.5vh;
+    bottom: 8.5vh;
+    left: 2.5vh;
+    right: 2.5vh;
+    overflow: hidden;
+}
+
+#panel-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37vh;
+    height: 100%;
+    background-color: khaki;
+}
+
+#panel-title-wrapper {
+    position: absolute;
+    top: 0;
+    height: 4vh;
+    width: 100%;
+    background-color: brown;
+}
+
+#pane-wrapper {
+    position: absolute;
+    top: 0;
+    left: 39.5vh;
+    right: 0;
+    height: 100%;
+    background-color: khaki;
+}
+
+#title-wrapper {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    width: 36vh;
+    overflow: hidden;
+    background-color: brown;
+}
+
+#clock-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 20vh;
+    right: 0;
+    overflow: hidden;
+    background-color: brown;
+}
+
+#clock-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    font-family: 'Google Sans Regular';
+    font-size: 5vh;
+    color: white;
+    white-space: nowrap;
+}
+
+#title-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    font-family: 'Google Sans Regular';
+    font-size: 4vh;
+    color: white;
+    white-space: nowrap;
+}
+
+#footer-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    font-family: 'Google Sans Regular';
+    font-size: 3vh;
+    color: white;
+    white-space: nowrap;
+}
+
+#panel-title-text {
+    position: absolute;
+    top: 50%;
+    left: 1.6vh;
+    transform: translateY(-50%);
+
+    font-family: 'Google Sans Regular';
+    font-size: 2vh;
+    color: white;
+    white-space: nowrap;
+}
+
+#pane-title-wrapper {
+    position: absolute;
+    top: 0;
+    height: 4vh;
+    width: 100%;
+    background-color: brown;
+}
