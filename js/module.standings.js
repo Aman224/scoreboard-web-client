@@ -1,19 +1,19 @@
-let entryTemplate = [
-    '<div class="module-standings-entry-wrapper">',
-    '   <div class="module-standings-entry-logo-wrapper">',
-    '       <img class="module-standings-entry-logo-img" src="img/img.png" alt="team logo" width="100%" height="100%">',
-    '   </div>',
-    '   <div class="module-standings-entry-name-wrapper">',
-    '       <span class="module-standings-entry-name-text"></span>',
-    '   </div>',
-    '   <div class="module-standings-entry-score-wrapper">',
-    '       <span class="module-standings-entry-score-text"></span>',
-    '   </div>',
-    '</div>'
-].join('\n');
-
 $("document").ready(function() {
-    var scoreList = [];
+    let entryTemplate = [
+        '<div class="module-standings-entry-wrapper">',
+        '   <div class="module-standings-entry-logo-wrapper">',
+        '       <img class="module-standings-entry-logo-img" src="img/img.png" alt="team logo" width="100%" height="100%">',
+        '   </div>',
+        '   <div class="module-standings-entry-name-wrapper">',
+        '       <span class="module-standings-entry-name-text"></span>',
+        '   </div>',
+        '   <div class="module-standings-entry-score-wrapper">',
+        '       <span class="module-standings-entry-score-text"></span>',
+        '   </div>',
+        '</div>'
+    ].join('\n');
+
+    var scoreList = [];    
 
     function rgba_convert(rgb, a) {
         var colorString = "rgba(";
