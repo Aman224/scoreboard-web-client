@@ -69,5 +69,5 @@ $("document").ready(function() {
     }
 
     renderScores();
-    window.setInterval(renderScores, 2000);
+    module_overall_tid = window.setInterval(renderScores, API_REFRESH_INTERVAL);
 });
