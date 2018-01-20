@@ -14,6 +14,17 @@ let entryTemplate = [
 $("document").ready(function() {
     var scoreList = [];
 
+    function rgba_convert(rgb, a) {
+        var colorString = "rgba(";
+
+        colorString += parseInt(rgb.slice(0, 2), 16) + ", ";
+        colorString += parseInt(rgb.slice(2, 4), 16) + ", ";
+        colorString += parseInt(rgb.slice(4, 6), 16) + ", ";
+        colorString += a + ")";
+        
+        return colorString;
+    }
+
     function appendScore(score, index, listSize) {
         var entry = $.parseHTML(entryTemplate);
 
@@ -23,6 +34,8 @@ $("document").ready(function() {
         $(entry).css("height", (100 / listSize).toString() + "%");
         $(entry).css("top", (index * (100 / listSize)).toString() + "%");
 
+        $(entry).css("background-color", rgba_convert(score['color'], 0.5));
+
         $("#module-standings-wrapper").append(entry);
     }
 
@@ -31,6 +44,8 @@ $("document").ready(function() {
 
         $(entries[index]).find(".module-standings-entry-name-text")[0].innerText = score['name'];
         $(entries[index]).find(".module-standings-entry-score-text")[0].innerText = score['score'];
+
+        $(entries[index]).css("background-color", rgba_convert(score['color'], 0.5));
     }
 
     function renderScores() {
