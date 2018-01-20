@@ -4,13 +4,6 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #2980b9 url('../img/bg.png') repeat 0 0;
-    animation: 10s linear 0s normal none infinite animate;
-}
-
-@keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
 }
 
 #panel-modules {
@@ -23,6 +16,7 @@ body {
     bottom: 2.5vh;
     left: 2.5vh;
     right: 2.5vh;
+    background-color: gray;
     overflow: hidden;
 }
 
@@ -31,6 +25,7 @@ body {
     top: 0;
     height: 8vh;
     width: 100%;
+    background-color: teal;
     overflow: hidden;
 }
 
@@ -39,6 +34,7 @@ body {
     bottom: 0;
     height: 6vh;
     width: 100%;
+    background-color: teal;
     overflow: hidden;
 }
 
@@ -57,6 +53,7 @@ body {
     left: 0;
     width: 37vh;
     height: 100%;
+    background-color: khaki;
 }
 
 #panel-title-wrapper {
@@ -73,6 +70,7 @@ body {
     left: 39.5vh;
     right: 0;
     height: 100%;
+    background-color: khaki;
 }
 
 #title-wrapper {
@@ -81,6 +79,7 @@ body {
     left: 0;
     width: 36vh;
     overflow: hidden;
+    background-color: brown;
 }
 
 #clock-wrapper {
@@ -89,6 +88,7 @@ body {
     width: 20vh;
     right: 0;
     overflow: hidden;
+    background-color: brown;
 }
 
 #clock-text {
@@ -147,4 +147,5 @@ body {
     top: 0;
     height: 4vh;
     width: 100%;
+    background-color: brown;
 }
