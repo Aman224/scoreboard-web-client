@@ -19,7 +19,6 @@
     top: 50%;
     left: 3vh;
     transform: translateY(-50%);
-    background-color: black;
 }
 
 .module-standings-entry-name-wrapper {
@@ -29,7 +28,6 @@
     top: 50%;
     right: 3vh;
     transform: translateY(-200%);
-    background-color: gray;
 }
 
 .module-standings-entry-score-wrapper {
@@ -39,7 +37,6 @@
     top: 50%;
     right: 3vh;
     transform: translateY(-15%);
-    background-color: blue;
 }
 
 .module-standings-entry-name-text {
@@ -63,7 +60,7 @@
     transform: translateX(-50%) translateY(-50%);
 
     font-family: 'Google Sans Regular';
-    font-size: 4vh;
+    font-size: 5vh;
     color: white;
     white-space: nowrap;
 }

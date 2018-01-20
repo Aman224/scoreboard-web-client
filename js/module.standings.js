@@ -1,6 +1,7 @@
 let entryTemplate = [
     '<div class="module-standings-entry-wrapper">',
     '   <div class="module-standings-entry-logo-wrapper">',
+    '       <img class="module-standings-entry-logo-img" src="img/img.png" alt="team logo" width="100%" height="100%">',
     '   </div>',
     '   <div class="module-standings-entry-name-wrapper">',
     '       <span class="module-standings-entry-name-text"></span>',
@@ -30,6 +31,7 @@ $("document").ready(function() {
 
         $(entry).find(".module-standings-entry-score-text")[0].innerText = score['score'];
         $(entry).find(".module-standings-entry-name-text")[0].innerText = score['name'];
+        $($(entry).find(".module-standings-entry-logo-img")[0]).attr("src", "img/" + score['logo'])
 
         $(entry).css("height", (100 / listSize).toString() + "%");
         $(entry).css("top", (index * (100 / listSize)).toString() + "%");
