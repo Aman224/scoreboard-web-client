@@ -23,7 +23,7 @@ $("document").ready(function() {
         $(entry).css("height", (100 / listSize).toString() + "%");
         $(entry).css("top", (index * (100 / listSize)).toString() + "%");
 
-        $("#module-standings-wrapper").prepend(entry);
+        $("#module-standings-wrapper").append(entry);
     }
 
     function updateScore(score, index, listSize) {
