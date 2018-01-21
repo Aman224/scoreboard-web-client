@@ -1,3 +1,5 @@
+var moduleStandings = {};
+
 $("document").ready(function() {
     let entryTemplate = [
         '<div class="module-standings-entry-wrapper">',
@@ -68,6 +70,8 @@ $("document").ready(function() {
         });
     }
 
-    renderScores();
-    module_standings_tid = window.setInterval(renderScores, API_REFRESH_INTERVAL);
+    moduleStandings['name'] = "Standings";
+    moduleStandings['domID'] = "#module-standings-wrapper";
+    moduleStandings['renderFunc'] = renderScores;
+    moduleStandings['timerID'] = null;
 });

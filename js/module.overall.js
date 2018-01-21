@@ -1,3 +1,5 @@
+var moduleOverall = {};
+
 $("document").ready(function() {
     let entryTemplate = [
         '<div class="module-overall-entry-wrapper">',
@@ -68,6 +70,10 @@ $("document").ready(function() {
         });
     }
 
+    moduleOverall['name'] = "Overall";
+    moduleOverall['domID'] = "#module-overall-wrapper";
+    moduleOverall['renderFunc'] = renderScores;
+    moduleOverall['timerID'] = null;
+    
     renderScores();
-    module_overall_tid = window.setInterval(renderScores, API_REFRESH_INTERVAL);
 });
