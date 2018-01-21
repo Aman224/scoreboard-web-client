@@ -8,8 +8,8 @@ $(document).ready(function() {
         $("#clock-text").text(time);
     }
 
-    window.setInterval(setClockTime, 30000);
     setClockTime();
+    window.setInterval(setClockTime, 30000);
 
     $("#footer-text").text("Govt. Model Engineering College, Thrikkakara");
     $("#title-text").html("Layatharang <b>2018</b>");
