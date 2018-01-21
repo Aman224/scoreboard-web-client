@@ -74,6 +74,4 @@ $("document").ready(function() {
     moduleOverall['domID'] = "#module-overall-wrapper";
     moduleOverall['renderFunc'] = renderScores;
     moduleOverall['timerID'] = null;
-    
-    renderScores();
 });
