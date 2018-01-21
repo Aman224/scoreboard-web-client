@@ -53,7 +53,9 @@ $(document).ready(function() {
 
     function renderStage() {
         $.ajax({url: API_URL + "stages", crossDomain: true, dataType: 'json', success: function(result) {
-                if (stageList.length !== result.length) {
+                if (stageList === result) {
+                    return;
+                } else if (stageList.length !== result.length) {
                     changeFunc = appendStage;
                     $(".module-ongoing-entry-wrapper").remove();
                 } else {
