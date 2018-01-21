@@ -4,6 +4,7 @@ $(document).ready(function() {
     var currPaneModuleIndex = 0;
 
     paneModules.push(moduleOverall);
+    paneModules.push(moduleOngoing);
     
     function deactivateModule(container, module) {
         window.clearInterval(module['timerID']);
@@ -16,7 +17,7 @@ $(document).ready(function() {
         var moduleHTML = $(module['domID']).detach();
         moduleHTML.removeAttr("hidden");
         $(container).append(moduleHTML);
-        window.setInterval(module['renderFunc'], updateInterval)
+        module['timerID'] = window.setInterval(module['renderFunc'], updateInterval)
         module['renderFunc']();
     }
 
@@ -27,7 +28,7 @@ $(document).ready(function() {
         deactivateModule("#pane-wrapper", paneModules[currPaneModuleIndex]);
         
         currPaneModuleIndex++;
-        if (currPaneModuleIndex = paneModules.length)
+        if (currPaneModuleIndex === paneModules.length)
             currPaneModuleIndex = 0;
 
         activateModule("#pane-wrapper", paneModules[currPaneModuleIndex], API_REFRESH_INTERVAL);
@@ -35,5 +36,5 @@ $(document).ready(function() {
     }
 
     cyclePaneModules();
-    window.setInterval(cyclePaneModules, 2000);
+    window.setInterval(cyclePaneModules, 10000);
 });

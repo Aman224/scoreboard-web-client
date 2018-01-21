@@ -1,0 +1,104 @@
+#module-ongoing-wrapper {
+    position: absolute;
+    top: 4vh;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.module-ongoing-entry-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.module-ongoing-entry-title-wrapper {
+    position: absolute;
+    top: 6vh;
+    height: 6vh;
+    width: 100%;
+}
+
+.module-ongoing-entry-name-wrapper {
+    position: absolute;
+    top: 10vh;
+    height: 8vh;
+    width: 100%;
+}
+
+.module-ongoing-entry-event-wrapper {
+    position: absolute;
+    top: 18vh;
+    height: 6vh;
+    width: 100%;
+}
+
+.module-ongoing-entry-title-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    font-family: 'Google Sans Regular';
+    font-size: 3vh;
+    color: white;
+    white-space: nowrap;
+}
+
+.module-ongoing-entry-name-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    font-family: 'Google Sans Regular';
+    font-size: 5vh;
+    color: white;
+    white-space: nowrap;
+}
+
+.module-ongoing-entry-event-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    font-family: 'Google Sans Regular';
+    font-size: 3vh;
+    color: white;
+    white-space: nowrap;
+}
+
+.module-ongoing-entry-results-wrapper {
+    position: absolute;
+    height: 36vh;
+    left: 6vh;
+    right: 6vh;
+    bottom: 6vh;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.module-ongoing-entry-results-title-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 4vh;
+    width: 100%;
+    background-color: rgba(64, 64, 64, 0.5);
+}
+
+.module-ongoing-entry-results-title-text {
+    position: absolute;
+    top: 50%;
+    left: 1.6vh;
+    transform: translateY(-50%);
+
+    font-family: 'Google Sans Regular';
+    font-size: 2vh;
+    color: white;
+    white-space: nowrap;
+}
