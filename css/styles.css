@@ -5,7 +5,7 @@ body {
     left: 0;
     right: 0;
     background: #2980b9 url('../img/bg.png') repeat 0 0;
-    animation: 10s linear 0s normal none infinite animate;
+    /* animation: 10s linear 0s normal none infinite animate; */
 }
 
 @keyframes animate {
@@ -64,7 +64,7 @@ body {
     top: 0;
     height: 4vh;
     width: 100%;
-    background-color: brown;
+    background-color: rgba(64, 64, 64, 0.75);
 }
 
 #pane-wrapper {
@@ -147,7 +147,7 @@ body {
     top: 0;
     height: 4vh;
     width: 100%;
-    background-color: brown;
+    background-color: rgba(64, 64, 64, 0.75);
 }
 
 #pane-title-text {
