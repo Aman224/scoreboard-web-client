@@ -101,3 +101,34 @@
     color: white;
     white-space: nowrap;
 }
+
+.module-ongoing-entry-results-table-wrapper {
+    position: absolute;
+    top: 4vh;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.module-ongoing-entry-results-table-wrapper table {
+    font-family: 'Google Sans Regular';
+    font-size: 2.0vh;
+    color: white;
+    width: 100%;
+    padding: 0.4vh 2vh;
+}
+
+.module-ongoing-entry-results-table-wrapper thead {
+    display: table-header-group;
+}
+
+.module-ongoing-entry-results-table-wrapper th, td {
+    font-family: 'Google Sans Regular';
+    padding: 1.0vh 1.0vh;
+    text-align: left;
+    border-bottom: 0.1vh solid rgba(255, 255, 255, 0.75);
+}
+
+.module-ongoing-entry-results-table-wrapper th {
+    border-bottom: 0.16vh solid rgba(255, 255, 255, 0.75);
+}
