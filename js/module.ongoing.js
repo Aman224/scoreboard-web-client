@@ -115,7 +115,7 @@ $(document).ready(function() {
                 }
 
                 // TODO: implement updateResult function
-                console.log(resultEvent);
+
                 $(tableWrapper).parent().find(".module-ongoing-entry-results-title-text")[0].innerText = resultEvent;
                 result.forEach(function(elem, index) {
                     changeFunc($(tableWrapper).find("table")[0], elem, index, result.length);
