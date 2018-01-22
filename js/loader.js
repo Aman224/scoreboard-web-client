@@ -28,7 +28,7 @@ $(document).ready(function() {
         deactivateModule("#pane-wrapper", paneModules[currPaneModuleIndex]);
         
         currPaneModuleIndex++;
-        if (currPaneModuleIndex === paneModules.length)
+        if (currPaneModuleIndex >= paneModules.length)
             currPaneModuleIndex = 0;
 
         activateModule("#pane-wrapper", paneModules[currPaneModuleIndex], API_REFRESH_INTERVAL);
