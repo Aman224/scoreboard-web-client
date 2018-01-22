@@ -33,7 +33,7 @@ $("document").ready(function() {
 
         $(entry).find(".module-standings-entry-score-text")[0].innerText = score['score'];
         $(entry).find(".module-standings-entry-name-text")[0].innerText = score['name'];
-        $($(entry).find(".module-standings-entry-logo-img")[0]).attr("src", "img/" + score['logo'])
+        $(entry).find(".module-standings-entry-logo-img")[0].src = "img/" + score['logo'];
 
         $(entry).css("height", (100 / listSize).toString() + "%");
         $(entry).css("top", (index * (100 / listSize)).toString() + "%");
@@ -48,6 +48,7 @@ $("document").ready(function() {
 
         $(entries[index]).find(".module-standings-entry-name-text")[0].innerText = score['name'];
         $(entries[index]).find(".module-standings-entry-score-text")[0].innerText = score['score'];
+        $(entries[index]).find(".module-standings-entry-logo-img")[0].src = "img/" + score['logo'];
 
         $(entries[index]).css("background-color", rgba_convert(score['color'], 0.5));
     }

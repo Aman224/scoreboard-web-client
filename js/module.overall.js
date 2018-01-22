@@ -33,7 +33,7 @@ $("document").ready(function() {
 
         $(entry).find(".module-overall-entry-score-text")[0].innerText = parseInt(score['score']) + parseInt(score['other_score']);
         $(entry).find(".module-overall-entry-name-text")[0].innerText = score['name'];
-        $($(entry).find(".module-overall-entry-logo-img")[0]).attr("src", "img/" + score['logo'])
+        $(entry).find(".module-overall-entry-logo-img")[0].src = "img/" + score['logo'];
 
         $(entry).css("width", (100 / listSize).toString() + "%");
         $(entry).css("left", (index * (100 / listSize)).toString() + "%");
@@ -48,6 +48,7 @@ $("document").ready(function() {
 
         $(entries[index]).find(".module-overall-entry-name-text")[0].innerText = score['name'];
         $(entries[index]).find(".module-overall-entry-score-text")[0].innerText = parseInt(score['score']) + parseInt(score['other_score']);
+        $(entries[index]).find(".module-overall-entry-logo-img")[0].src = "img/" + score['logo'];
 
         $(entries[index]).css("background-color", rgba_convert(score['color'], 0.5));
     }
