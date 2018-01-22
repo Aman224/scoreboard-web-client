@@ -40,7 +40,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    font-family: 'Google Sans Regular';
+    font-family: 'Google Sans';
     font-size: 3vh;
     color: white;
     white-space: nowrap;
@@ -53,7 +53,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    font-family: 'Google Sans Regular';
+    font-family: 'Google Sans';
     font-size: 5vh;
     color: white;
     white-space: nowrap;
@@ -66,7 +66,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    font-family: 'Google Sans Regular';
+    font-family: 'Google Sans';
     font-size: 3vh;
     color: white;
     white-space: nowrap;
@@ -96,7 +96,7 @@
     left: 1.6vh;
     transform: translateY(-50%);
 
-    font-family: 'Google Sans Regular';
+    font-family: 'Google Sans';
     font-size: 2vh;
     color: white;
     white-space: nowrap;
@@ -111,7 +111,7 @@
 }
 
 .module-ongoing-entry-results-table-wrapper table {
-    font-family: 'Google Sans Regular';
+    font-family: 'Google Sans';
     font-size: 2.0vh;
     color: white;
     width: 100%;
@@ -123,7 +123,7 @@
 }
 
 .module-ongoing-entry-results-table-wrapper th, td {
-    font-family: 'Google Sans Regular';
+    font-family: 'Google Sans';
     padding: 1.0vh 1.0vh;
     text-align: left;
     border-bottom: 0.1vh solid rgba(255, 255, 255, 0.75);

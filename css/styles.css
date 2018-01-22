@@ -1,3 +1,51 @@
+@font-face {
+    src: url(../fonts/GoogleSans-Regular.woff);
+    font-family: "Google Sans";
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(../fonts/GoogleSans-Italic.woff);
+    font-family: "Google Sans";
+    font-stretch: normal;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(../fonts/GoogleSans-Medium.woff);
+    font-family: "Google Sans";
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    src: url(../fonts/GoogleSans-MediumItalic.woff);
+    font-family: "Google Sans";
+    font-stretch: normal;
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    src: url(../fonts/GoogleSans-Bold.woff);
+    font-family: "Google Sans";
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    src: url(../fonts/GoogleSans-BoldItalic.woff);
+    font-family: "Google Sans";
+    font-stretch: normal;
+    font-style: italic;
+    font-weight: 700;
+}
+
 body {
     position: absolute;
     top: 0;
@@ -98,7 +146,7 @@ body {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    font-family: 'Google Sans Regular';
+    font-family: 'Google Sans';
     font-size: 5vh;
     color: white;
     white-space: nowrap;
@@ -111,7 +159,7 @@ body {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    font-family: 'Google Sans Regular';
+    font-family: 'Google Sans';
     font-size: 4vh;
     color: white;
     white-space: nowrap;
@@ -124,7 +172,7 @@ body {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    font-family: 'Google Sans Regular';
+    font-family: 'Google Sans';
     font-size: 3vh;
     color: white;
     white-space: nowrap;
@@ -136,7 +184,7 @@ body {
     left: 1.6vh;
     transform: translateY(-50%);
 
-    font-family: 'Google Sans Regular';
+    font-family: 'Google Sans';
     font-size: 2vh;
     color: white;
     white-space: nowrap;
@@ -156,7 +204,7 @@ body {
     left: 1.6vh;
     transform: translateY(-50%);
 
-    font-family: 'Google Sans Regular';
+    font-family: 'Google Sans';
     font-size: 2vh;
     color: white;
     white-space: nowrap;

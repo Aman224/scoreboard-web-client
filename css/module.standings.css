@@ -46,7 +46,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    font-family: 'Google Sans Regular';
+    font-family: 'Google Sans';
     font-size: 2vh;
     color: white;
     white-space: nowrap;
@@ -59,7 +59,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    font-family: 'Google Sans Regular';
+    font-family: 'Google Sans';
     font-size: 5vh;
     color: white;
     white-space: nowrap;
