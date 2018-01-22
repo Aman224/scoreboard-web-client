@@ -1,0 +1,15 @@
+#module-photos-wrapper {
+    position: absolute;
+    top: 4vh;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden
+}
+
+#module-photos-wrapper img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.75;
+}

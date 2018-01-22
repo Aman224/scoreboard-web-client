@@ -4,6 +4,7 @@ $(document).ready(function() {
     var currPaneModuleIndex = 0;
 
     paneModules.push(moduleOverall);
+    paneModules.push(modulePhotos);
     paneModules.push(moduleOngoing);
     
     function deactivateModule(container, module) {
