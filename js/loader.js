@@ -36,5 +36,5 @@ $(document).ready(function() {
     }
 
     cyclePaneModules();
-    window.setInterval(cyclePaneModules, 10000);
+    window.setInterval(cyclePaneModules, MODULE_SWITCH_INTERVAL);
 });
