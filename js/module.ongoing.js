@@ -55,7 +55,7 @@ $(document).ready(function() {
     function formEventString (stage) {
         var eventString = '';
 
-        eventString += '<small><b>Ongoing</b></small>: ';
+        eventString += '<small><b>Ongoing:</b></small> ';
         eventString += stage['event'];
 
         return eventString;
