@@ -3,6 +3,8 @@
     top: 4vh;
     bottom: 0;
     width: 100%;
+    overflow: visible;
+    transform-style: preserve-3d;
 }
 
 .module-standings-entry-wrapper {
@@ -10,6 +12,7 @@
     top: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    will-change: auto;
 }
 
 .module-standings-entry-logo-wrapper {
@@ -63,4 +66,44 @@
     font-size: 5vh;
     color: white;
     white-space: nowrap;
+}
+
+.module-standings-exit {
+    animation-name: st-entry-flip;
+    animation-iteration-count: 1;
+    animation-duration:  0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.module-standings-enter {
+    animation-name: st-entry-back;
+    animation-iteration-count: 1;
+    animation-duration:  0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes st-entry-flip {
+    from {
+        transform: translate3d(0, 0, 0);
+        opacity: 1.0;
+    }
+
+    to {
+        transform: translate3d(-12vh, 0, 0);
+        opacity: 0.0;
+    }
+}
+
+@keyframes st-entry-back {
+    from {
+        transform: translate3d(12vh, 0, 0);
+        opacity: 0.0;
+    }
+
+    to {
+        transform: translate3d(0vh, 0, 0);
+        opacity: 1.0;
+    }
 }

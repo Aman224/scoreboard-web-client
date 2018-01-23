@@ -23,9 +23,12 @@ $(document).ready(function() {
     }
 
     activateModule("#panel-wrapper", moduleStandings, API_REFRESH_INTERVAL);
-    $("#panel-title-text").text("Standings");
+    $("#panel-title-text").text(moduleStandings['name']);
 
     function cyclePaneModules() {
+        $("#pane-wrapper").addClass("pane-wrapper-flip");
+        $("#pane-wrapper").one("animationend", function() { $(this).removeClass("pane-wrapper-flip"); });
+
         deactivateModule("#pane-wrapper", paneModules[currPaneModuleIndex]);
         
         currPaneModuleIndex++;

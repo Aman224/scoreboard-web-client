@@ -53,6 +53,7 @@ body {
     left: 0;
     right: 0;
     background: #2980b9 url('../img/bg.png') repeat 0 0;
+    perspective: 200vh;
     /* animation: 10s linear 0s normal none infinite animate; */
 }
 
@@ -71,7 +72,7 @@ body {
     bottom: 2.5vh;
     left: 2.5vh;
     right: 2.5vh;
-    overflow: hidden;
+    overflow: visible;
 }
 
 #top-chrome-wrapper {
@@ -96,7 +97,7 @@ body {
     bottom: 8.5vh;
     left: 2.5vh;
     right: 2.5vh;
-    overflow: hidden;
+    overflow: visible;
 }
 
 #panel-wrapper {
@@ -105,6 +106,7 @@ body {
     left: 0;
     width: 37vh;
     height: 100%;
+    overflow: visible;
 }
 
 #panel-title-wrapper {
@@ -208,4 +210,18 @@ body {
     font-size: 2vh;
     color: white;
     white-space: nowrap;
+}
+
+.pane-wrapper-flip {
+    animation-name: pane-flip;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@keyframes pane-flip {
+    0% { transform: rotate3d(1.0, 0.0, 0.0, 0deg); }
+    50% { transform: rotate3d(1.0, 0.0, 0.0, 180deg); }
+    100% { transform: rotate3d(1.0, 0.0, 0.0, 360deg); }
 }
