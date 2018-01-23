@@ -1,4 +1,4 @@
-let API_URL = "http://mec-scoreboard.herokuapp.com/api/";
+let API_URL = "https://mec-scoreboard.herokuapp.com/api/";
 let MODULE_SWITCH_INTERVAL = 24000
 let CLOCK_UPDATE_INTERVAL = 30000
 
