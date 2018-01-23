@@ -107,6 +107,7 @@ body {
     width: 37vh;
     height: 100%;
     overflow: visible;
+    background-color: rgba(64, 64, 64, 0.75);
 }
 
 #panel-title-wrapper {
