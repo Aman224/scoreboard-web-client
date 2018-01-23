@@ -149,5 +149,6 @@ $(document).ready(function() {
     moduleOngoing['name'] = 'Ongoing';
     moduleOngoing['domID'] = '#module-ongoing-wrapper';
     moduleOngoing['renderFunc'] = renderStage;
+    moduleOngoing['renderInterval'] = 16000;
     moduleOverall['timerID'] = null;
 });

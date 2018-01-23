@@ -14,15 +14,15 @@ $(document).ready(function() {
         $("#hidden-modules").append(moduleHTML);
     }
 
-    function activateModule(container, module, updateInterval) {
+    function activateModule(container, module) {
         var moduleHTML = $(module['domID']).detach();
         moduleHTML.removeAttr("hidden");
         $(container).append(moduleHTML);
-        module['timerID'] = window.setInterval(module['renderFunc'], updateInterval)
+        module['timerID'] = window.setInterval(module['renderFunc'], module['renderInterval']);
         module['renderFunc']();
     }
 
-    activateModule("#panel-wrapper", moduleStandings, API_REFRESH_INTERVAL);
+    activateModule("#panel-wrapper", moduleStandings);
     $("#panel-title-text").text(moduleStandings['name']);
 
     function cyclePaneModules() {
@@ -35,7 +35,7 @@ $(document).ready(function() {
         if (currPaneModuleIndex >= paneModules.length)
             currPaneModuleIndex = 0;
 
-        activateModule("#pane-wrapper", paneModules[currPaneModuleIndex], API_REFRESH_INTERVAL);
+        activateModule("#pane-wrapper", paneModules[currPaneModuleIndex]);
         $("#pane-title-text").text(paneModules[currPaneModuleIndex]['name']);
     }
 
