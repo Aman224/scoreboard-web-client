@@ -47,11 +47,11 @@ $("document").ready(function() {
         var entries = $("#module-standings-wrapper").children(".module-standings-entry-wrapper");
 
         $(entries[index]).removeClass("module-standings-enter");
-        $(entries[index]).css("animation-delay", (index * 0.25).toString() + "s");
+        $(entries[index]).css("animation-delay", (index * 0.18).toString() + "s");
         $(entries[index]).addClass("module-standings-exit");
 
         $(entries[index]).one("animationend", function() {
-            $(entries[index]).css("animation-delay", (listSize * 0.25).toString() + "s");
+            $(entries[index]).css("animation-delay", (listSize * 0.18).toString() + "s");
             $(entries[index]).addClass("module-standings-enter");
             $(entries[index]).removeClass("module-standings-exit");
         });

@@ -79,7 +79,7 @@
 .module-standings-enter {
     animation-name: st-entry-back;
     animation-iteration-count: 1;
-    animation-duration:  0.5s;
+    animation-duration:  0.36s;
     animation-timing-function: ease-out;
     animation-fill-mode: backwards;
 }

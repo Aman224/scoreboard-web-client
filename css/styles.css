@@ -214,7 +214,7 @@ body {
 
 .pane-wrapper-flip {
     animation-name: pane-flip;
-    animation-duration: 0.5s;
+    animation-duration: 0.75s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -222,6 +222,5 @@ body {
 
 @keyframes pane-flip {
     0% { transform: rotate3d(1.0, 0.0, 0.0, 0deg); }
-    50% { transform: rotate3d(1.0, 0.0, 0.0, 180deg); }
     100% { transform: rotate3d(1.0, 0.0, 0.0, 360deg); }
 }
