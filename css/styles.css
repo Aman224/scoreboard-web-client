@@ -216,10 +216,10 @@ body {
 
 .pane-wrapper-flip {
     animation-name: pane-flip;
-    animation-duration: 0.75s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-timing-function: ease;
 }
 
 @keyframes pane-flip {

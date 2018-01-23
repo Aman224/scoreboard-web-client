@@ -72,7 +72,7 @@
     animation-name: st-entry-flip;
     animation-iteration-count: 1;
     animation-duration:  0.5s;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
 
@@ -80,7 +80,7 @@
     animation-name: st-entry-back;
     animation-iteration-count: 1;
     animation-duration:  0.36s;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease;
     animation-fill-mode: backwards;
 }
 
@@ -91,19 +91,19 @@
     }
 
     to {
-        transform: translate3d(-12vh, 0, 0);
+        transform: translate3d(0, 0, -12vh);
         opacity: 0.0;
     }
 }
 
 @keyframes st-entry-back {
     from {
-        transform: translate3d(12vh, 0, 0);
+        transform: translate3d(0, 0, 12vh);
         opacity: 0.0;
     }
 
     to {
-        transform: translate3d(0vh, 0, 0);
+        transform: translate3d(0, 0, 0);
         opacity: 1.0;
     }
 }
