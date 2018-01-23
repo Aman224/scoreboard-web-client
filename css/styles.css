@@ -123,6 +123,7 @@ body {
     left: 41vh;
     right: 0;
     height: 100%;
+    background-color: rgba(64, 64, 64, 0.75);
 }
 
 #title-wrapper {
