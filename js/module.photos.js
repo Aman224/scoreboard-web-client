@@ -7,7 +7,17 @@ $("document").ready(function() {
         if (photoList.length === 0)
             return;
 
-        document.getElementById("module-photos-img").src = photoList[currPhoto];
+        imgElement = document.getElementById("module-photos-img");
+        imgElement.src = photoList[currPhoto];
+
+        parentElement = document.getElementById("module-photos-wrapper");
+        imgElement.removeAttribute('width');
+        imgElement.removeAttribute('height');
+
+        if ((imgElement.naturalWidth / imgElement.naturalHeight) > (parentElement.clientWidth / parentElement.clientHeight))
+            imgElement.setAttribute('width', '100%');
+        else
+            imgElement.setAttribute('height', '100%');
 
         currPhoto++;
         if (currPhoto >= photoList.length)
