@@ -29,15 +29,17 @@ $(document).ready(function() {
 
     function cyclePaneModules() {
         $("#pane-wrapper").addClass("pane-wrapper-flip");
-        $("#pane-wrapper").one("animationend", function() { $(this).removeClass("pane-wrapper-flip"); });
-
         deactivateModule("#pane-wrapper", paneModules[currPaneModuleIndex]);
-        
+
         currPaneModuleIndex++;
         if (currPaneModuleIndex >= paneModules.length)
             currPaneModuleIndex = 0;
 
-        activateModule("#pane-wrapper", paneModules[currPaneModuleIndex]);
+        $("#pane-wrapper").one("animationend", function() {
+            $(this).removeClass("pane-wrapper-flip");
+            activateModule("#pane-wrapper", paneModules[currPaneModuleIndex]);
+        });
+
         $("#pane-title-text").text(paneModules[currPaneModuleIndex]['name']);
     }
 

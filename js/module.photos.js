@@ -16,14 +16,18 @@ $("document").ready(function() {
 
     imgElement.addEventListener("animationstart", function(event) {
 
-        parentElement = document.getElementById("module-photos-wrapper");
-        event.target.removeAttribute('width');
-        event.target.removeAttribute('height');
+        if (PHOTO_MODE_FIT) {
+            parentElement = document.getElementById("module-photos-wrapper");
+            event.target.removeAttribute('width');
+            event.target.removeAttribute('height');
 
-        if ((event.target.naturalWidth / event.target.naturalHeight) > (parentElement.clientWidth / parentElement.clientHeight))
-            event.target.setAttribute('width', '100%');
-        else
-            event.target.setAttribute('height', '100%');
+            if ((event.target.naturalWidth / event.target.naturalHeight) > (parentElement.clientWidth / parentElement.clientHeight))
+                event.target.setAttribute('width', '100%');
+            else
+                event.target.setAttribute('height', '100%');
+        } else {
+            imgElement.setAttribute("width", "100%");
+        }
     });
 
     function renderPhotos() {
