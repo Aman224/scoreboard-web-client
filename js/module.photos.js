@@ -6,18 +6,34 @@ $("document").ready(function() {
     function renderPhotos() {
         if (photoList.length === 0)
             return;
+        
+        var imgElement = document.getElementById("module-photos-img");
+        
+        imgElement.classList.remove("module-photos-enter");
+        imgElement.classList.add("module-photos-exit");
 
-        imgElement = document.getElementById("module-photos-img");
-        imgElement.src = photoList[currPhoto];
+        imgElement.addEventListener("animationend", function(event) {
+            imgElement.classList.remove("module-photos-exit");
 
-        parentElement = document.getElementById("module-photos-wrapper");
-        imgElement.removeAttribute('width');
-        imgElement.removeAttribute('height');
+            event.target.removeEventListener("animationend");
+        });
 
-        if ((imgElement.naturalWidth / imgElement.naturalHeight) > (parentElement.clientWidth / parentElement.clientHeight))
-            imgElement.setAttribute('width', '100%');
-        else
-            imgElement.setAttribute('height', '100%');
+        imgElement.classList.add("module-photos-enter");
+        
+        imgElement.addEventListener("animationstart", function(event) {
+            event.target.src = photoList[currPhoto];
+
+            parentElement = document.getElementById("module-photos-wrapper");
+            event.target.removeAttribute('width');
+            event.target.removeAttribute('height');
+
+            if ((event.target.naturalWidth / event.target.naturalHeight) > (parentElement.clientWidth / parentElement.clientHeight))
+                event.target.setAttribute('width', '100%');
+            else
+                event.target.setAttribute('height', '100%');
+
+            event.target.removeEventListener("animationstart");
+        });
 
         currPhoto++;
         if (currPhoto >= photoList.length)
