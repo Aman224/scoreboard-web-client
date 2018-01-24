@@ -4,6 +4,7 @@
     bottom: 0;
     width: 100%;
     overflow: visible;
+    perspective: 4096px;
     transform-style: preserve-3d;
 }
 
@@ -91,14 +92,14 @@
     }
 
     to {
-        transform: translate3d(0, 0, -12vh);
+        transform: translate3d(0, 0, -192px);
         opacity: 0.0;
     }
 }
 
 @keyframes st-entry-back {
     from {
-        transform: translate3d(0, 0, 12vh);
+        transform: translate3d(0, 0, 192px);
         opacity: 0.0;
     }
 
