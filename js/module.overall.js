@@ -54,7 +54,7 @@ $("document").ready(function() {
     }
 
     function renderScores() {
-        $.ajax({url: API_URL + "scores", crossDomain: true, dataType: 'json', success: function(result) {
+        $.ajax({url: API_URL + "overall", crossDomain: true, dataType: 'json', success: function(result) {
                 if (scoreList === result) {
                     return;
                 } else if (scoreList.length !== result.length) {
