@@ -52,7 +52,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #2980b9 url('../img/bg.png') repeat 0 0;
+    background: url('../img/bg.png') repeat 0 0;
     perspective: 200vh;
     /* animation: 10s linear 0s normal none infinite animate; */
 }
@@ -125,6 +125,7 @@ body {
     right: 0;
     height: 100%;
     background-color: rgba(64, 64, 64, 0.75);
+    transform-style: preserve-3d;
 }
 
 #title-wrapper {
@@ -219,7 +220,7 @@ body {
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-timing-function: ease;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 @keyframes pane-flip {
