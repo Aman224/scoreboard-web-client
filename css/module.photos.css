@@ -11,7 +11,6 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    opacity: 0.75;
 }
 
 .module-photos-exit {
