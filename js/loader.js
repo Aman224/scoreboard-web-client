@@ -6,8 +6,6 @@ $(document).ready(function() {
     paneModules.push(moduleOngoing);
     paneModules.push(modulePhotos);
     paneModules.push(moduleOverall);
-
-    console.log(paneModules);
     
     function deactivateModule(container, module) {
         window.clearInterval(module['timerID']);
