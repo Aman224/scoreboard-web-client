@@ -54,6 +54,7 @@ body {
     right: 0;
     background: url('../img/bg.png') repeat 0 0;
     overflow: hidden;
+    cursor: none;
 }
 
 @keyframes animate {
