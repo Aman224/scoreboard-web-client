@@ -92,14 +92,14 @@
     }
 
     to {
-        transform: translate3d(0, 0, -192px);
+        transform: translate3d(6vh, 0, -192px);
         opacity: 0.0;
     }
 }
 
 @keyframes st-entry-back {
     from {
-        transform: translate3d(0, 0, 192px);
+        transform: translate3d(-6vh, 0, 192px);
         opacity: 0.0;
     }
 
