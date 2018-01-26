@@ -86,6 +86,6 @@ $("document").ready(function() {
     moduleStandings['name'] = "Standings";
     moduleStandings['domID'] = "#module-standings-wrapper";
     moduleStandings['renderFunc'] = renderScores;
-    moduleStandings['renderInterval'] = 12000;
+    moduleStandings['renderInterval'] = 8000;
     moduleStandings['timerID'] = null;
 });

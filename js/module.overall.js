@@ -76,6 +76,6 @@ $("document").ready(function() {
     moduleOverall['name'] = "Overall";
     moduleOverall['domID'] = "#module-overall-wrapper";
     moduleOverall['renderFunc'] = renderScores;
-    moduleOverall['renderInterval'] = 12000;
+    moduleOverall['renderInterval'] = 8000;
     moduleOverall['timerID'] = null;
 });

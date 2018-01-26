@@ -39,6 +39,6 @@ $("document").ready(function() {
     modulePhotos['name'] = "Gallery";
     modulePhotos['domID'] = "#module-photos-wrapper";
     modulePhotos['renderFunc'] = renderPhotos;
-    modulePhotos['renderInterval'] = 6000;
+    modulePhotos['renderInterval'] = 3000;
     modulePhotos['timerID'] = null;
 });
