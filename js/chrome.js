@@ -11,6 +11,6 @@ $(document).ready(function() {
     setClockTime();
     window.setInterval(setClockTime, CLOCK_UPDATE_INTERVAL);
 
-    $("#footer-text").text("Govt. Model Engineering College, Thrikkakara");
-    $("#title-text").html("Layatharang <b>2018</b>");
+    $("#footer-text").html(FOOTER_HTML);
+    $("#title-text").html(TITLE_HTML);
 });
